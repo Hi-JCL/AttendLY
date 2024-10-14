@@ -1,1 +1,729 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="style/style.css"> <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon"> <script src="script/script.js" defer></script> <title>AttendLY</title> </head> <body id="body"> <div class="container"> <header class="header " id="header"> <img src="assets/logo.png" alt="Attendly logo" class="logo"> <p class="logoTitle">AttendLY</p> </header> <div class="boxContainer"> <div class="loginPageSec " id="loginPageSec"> <div class="box"> <div class="inputBox"> <input type="text" class="crName input loginInput" id="crName" placeholder="CR NAME"> <input type="text" class="branch input loginInput" id="CourseBranch" placeholder="BRANCH"> <input type="text" class="sem input loginInput" id="courseSem" placeholder="SEMESTER"> <input type="text" class="sec input loginInput" id="branchSec" placeholder="SECTION"> </div> </div> <div class="nextBtnBox"> <img src="assets/right_arrow.svg" alt="Next" class="nextBtn" id="loginNxtBtn"> </div> </div> <div class="subjectDetailSec hide" id="subjectDetailSec"> <div class="setBox"> <p class="setTitle">How many set your class have?</p> <div> <p class="ss">Set: </p> <select class="classSet" id="classSet"> <option value="1" selected>1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> </select> </div> </div> <div class="eachSubDetails"> <p class="setTitle st">Enter Subjects Details</p> <p class="teachMsg">Please add Sir / Ma'am after teacher's name</p> <div class="subBox" id="subBox"> <div class="subCard"> <div class="subDetail"> <input type="text" class="teacherName input" placeholder="Teacher's Name"> <input type="text" class="subject input" placeholder="Subject Name"> </div> </div> </div> <img src="assets/plus.svg" id="addSubNext" class="EditaddSub"> <div class="doneBtn"> <img src="assets/right_arrow.svg" alt="next button" class="nextBtn" id="nextBtn"> </div> </div> </div> <div class="timeTableSec hide" id="timeTableSec"> <p class="scheduleTitle">Set Time Table</p> <div class="timeTableBox"> <div class="mondayBox"> <div class="dayBtn"> <p class="day">Monday</p> <img src="assets/downArrow.svg" class="downArrow openTab"> </div> <div class="dayCardsBox expand" id="dayCardsBox"> <div class="timeCard"> <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> <div class="timeCard"> <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p> <div class="subSetBox"> <select name="" id="" class="subList"> <option value="" selected>No Lecture</option> <option value="">A</option> <option value="">P</option> <option value="">A</option> <option value="">C</option> <option value="">P</option> <option value="">A</option> <option value="">S</option> </select> <select name="" id="" class="setList"> <option value="" selected>A</option> <option value="">B</option> </select> </div> </div> </div> </div> <div class="mondayBox"> <div class="dayBtn"> <p class="day">Tuesday</p> <img src="assets/downArrow.svg" class="downArrow"> </div> <div class="dayCardsBox collapse"> <div class="timeCard"> <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p> <div class="subSetBox"> </div> </div> </div> </div> <div class="mondayBox"> <div class="dayBtn"> <p class="day">Wednesday</p> <img src="assets/downArrow.svg" class="downArrow"> </div> <div class="dayCardsBox collapse"> <div class="timeCard"> <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p> <div class="subSetBox"> </div> </div> </div> </div> <div class="mondayBox"> <div class="dayBtn"> <p class="day">Thursday</p> <img src="assets/downArrow.svg" class="downArrow"> </div> <div class="dayCardsBox collapse"> <div class="timeCard"> <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p> <div class="subSetBox"> </div> </div> </div> </div> <div class="mondayBox"> <div class="dayBtn"> <p class="day">Friday</p> <img src="assets/downArrow.svg" class="downArrow"> </div> <div class="dayCardsBox collapse"> <div class="timeCard"> <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p> <div class="subSetBox"> </div> </div> </div> </div> <div class="mondayBox"> <div class="dayBtn"> <p class="day">Saturday</p> <img src="assets/downArrow.svg" class="downArrow"> </div> <div class="dayCardsBox collapse"> <div class="timeCard"> <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p> <div class="subSetBox"> </div> </div> <div class="timeCard"> <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p> <div class="subSetBox"> </div> </div> </div> </div> </div> <div class="doneBtn"> <div class="done" id="done">Finish</div> </div> </div> <div class="attendanceSec hide" id="attendanceSec"> <div class="head"> <div class="attendHeader "> <div class="logosec"> <img src="assets/logo1.png" alt="AttendLY logo" class="logo2"> <p class="atndLogo">AttendLY</p> </div> <div class="hamPrAll"> <button class="prsntAll" id="prsntAll">Present All</button> <img src="assets/hamburger-menu.svg" alt="hamburger menu" class="hamMenu" id="hamMenu"> </div></div> </div> <div class="studentBox msgCenter" id="studentBox"> <div class="msgToAddStd"> <p class="msg">To Add Student</p> <p class="msgC">Click</p> <img src="assets/downArrowBlack.svg" alt="" class="msgArrow"> <img src="assets/hamburger-menu-black.svg" alt="" class="msgHam"> <img src="assets/downArrowBlack.svg" alt="" class="msgArrow"> <p class="msg msgStd">Add Student</p> </div> </div> <div class="footer" id="footer"> <select class="selectSet" id="selectSet"> </select> <p class="genPDF" id="genPDF">Generate PDF</p> <select class="selectSub" id="selectSub"> </select> </div> </div> </div> <div class="menuBox menuOp hide" id="menuBox"> <div class="crInfoBox"> <div class="dateClose"> <p class="dayDate" id="dayDate"></p> <img src="assets/close.svg" alt="close button" class="menuClose" id="menuClose"> </div> <div class="crInfo"> <div class="userImgBox" id="userImgBox"> <input type="file" id="imgFile" class="imgFile" accept="image/png, image/jpeg"> </div> <div class="infoHead"> <p class="cr" id="cr"></p> <p class="course" id="course"></p> <p class="headSec" id="headSec"></p> </div> </div> </div> <div class="btnBox"> <button class="menuBtn" id="profile">Profile</button> <hr class="hr"> <button class="menuBtn" id="addStudent">Add Student</button> <hr class="hr"> <button class="menuBtn" id="editBtn">Edit Student</button> <hr class="hr"> <button class="menuBtn" id="editSubTech">Edit Subjects</button> <hr class="hr"> <button class="menuBtn" id="editTimeTable">Edit TimeTable</button> <hr class="hr"> <button class="reset" id="reset">Reset</button> </div> </div> <div class="addStdBox menuBox hide" id="addStdBox"> <div class="stdBox"> <p class="addStdTitile">Add Student</p> <div class="stdInputBox" id="stdInputBox"> </div> <img src="assets/plus.svg" alt="" class="addStdBtn" id="addStdBtn"> </div> <div class="stdBtnBox "> <button class="stdBtn" id="stdCancel">Cancel</button> <button class="stdBtn" id="stdBtnDone">Done</button> </div> </div> <div class="resetOverlay hide" id="resetOverlay"> <p class="atn">Attention !!!</p> <p class="resetMsg">Resetting this app will permanently erase all data related to AttendLY, including time-table, student records, etc. This action is irreversible. <br><br><br> Do you want to reset ?</p> <div class="resetBtnBox"> <button class="rstYes dis" id="rstYes">15s</button> <button class="rstNo" id="rstNo">No</button> </div> </div> <div class="pdfBox hide" id="pdfBox"> <div class="pdfHead"> <img src="assets/QULogo.png" alt="" srcset="" class="pdfImg"> <p class="att">ATTENDANCE</p> <img src="assets/attendLYLogo.png" alt="" srcset="" class="pdfImg"> </div> <div class="pdfInfoBox"> <div class="class"> <div class="keyBox"> <p class="key">CR Name: </p> <p class="key">Course: </p> <p class="key">Section: </p> <p class="key">Semester: </p> </div> <div class="keyBox"> <p class="val" id="pdfCr"></p> <p class="val" id="pdfCor"></p> <p class="val" id="pdfSec"></p> <p class="val" id="pdfS"></p> </div> </div> <div class="class"> <div class="keyBox"> <p class="key">Teacher: </p> <p class="key">Subject: </p> <p class="key">Period: </p> <p class="key">Date: </p> </div> <div class="keyBox"> <p class="val" id="techName"></p> <p class="val" id="pdfSub"></p> <p class="val" id="period"></p> <p class="val" id="pdfDate"></p> </div> </div> </div> <div class="titleBox"> <p class="title sl">Sl</p> <p class="title hr atten">Attendance</p> <p class="title nm">Name</p> <p class="title hr pdfQid">QID</p> <p class="title pdfSet">Set</p> </div> <div class="stdAttendBox" id="stdAttendBox"> </div> <p class="end">----------------------------- xxx -----------------------------</p> </div> <div class="editCtrlBox hide" id="editCtrlBox"> <button class="editDone edb" id="editDone">Done</button> </div> <div class="editOverlay hide" id="editOverlay"> <div class="editBox"> <input type="text" class="editName" id="editName" placeholder="Student Name"> <div class="editIdSet"> <input type="number" class="editQid" id="editQid" placeholder="QID"> <select class="editSet" id="editSet"> </select> </div> </div> <div class="editCtrlBtn"> <button class="editCan" id="editBoxCan">Cancel</button> <button class="editCan" id="edtDone">Done</button> </div> </div> <div class="profileBox hide" id="profileBox"> <div class="headBox"> <p class="pro" id="pro">Profile</p> <img src="assets/close.svg" class="proClose" id="proClose"> </div> <div class="loginBox hide" id="loginBox"> <div class="loginTitle"> <p class="logInfo ">CR Name: </p> <input type="text" class="logInp crn" id="crn" placeholder="CR Name"> <p class="logInfo ">Course: </p> <input type="text" class="logInp crs" id="crs" placeholder="Course"> <p class="logInfo ">Section: </p> <input type="text" class="logInp logSec" id="logSec" placeholder="Section"> <p class="logInfo ">Semester: </p> <input type="text" class="logInp logSem" id="logSem" placeholder="Semester"> <div class="edSet"> <p class="logInfo TSet">Total Set of class</p> <select id="edSets" class="edSets"> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> </select> </div> <button id="delPP" class="delPP">Delete Profile Image</button> </div> </div> <div class="subTeachBox hide" id="subTeachBox"> <div class="subEditBox" id="subEditBox"> </div> <img src="assets/plus.svg" id="EditaddSub" class="EditaddSub"> </div> <button class="proDone" id="proDone">Done</button> </div> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <script src="script/script.js" defer></script>
+    <title>AttendLY</title>
+</head>
+<body id="body">
+    <div class="container">
+        <header class="header " id="header">
+            <img src="assets/logo.png" alt="Attendly logo" class="logo">
+            <p class="logoTitle">AttendLY</p>
+        </header>
+        <div class="boxContainer">
+            <div class="loginPageSec " id="loginPageSec">
+                <div class="box">
+                    <div class="inputBox">
+                        <input type="text" class="crName input loginInput" id="crName" placeholder="CR NAME">
+                        <input type="text" class="branch input loginInput" id="CourseBranch" placeholder="BRANCH">
+                        <input type="text" class="sem input loginInput" id="courseSem" placeholder="SEMESTER">
+                        <input type="text" class="sec input loginInput" id="branchSec" placeholder="SECTION">
+                    </div>
+                </div>
+                <div class="nextBtnBox">
+                    <img src="assets/right_arrow.svg" alt="Next" class="nextBtn" id="loginNxtBtn">
+                </div>
+            </div>
+
+
+
+
+            <div class="subjectDetailSec hide" id="subjectDetailSec">
+                <div class="setBox">
+                    <p class="setTitle">How many set your class have?</p>
+                    <div>
+                        <p class="ss">Set: </p>
+                        <select class="classSet" id="classSet">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="eachSubDetails">
+                    <p class="setTitle  st">Enter Subjects Details</p>
+                    <p class="teachMsg">Please add Sir / Ma'am after teacher's name</p>
+                    <div class="subBox" id="subBox">
+                        <div class="subCard">
+                            <div class="subDetail">
+                                <input type="text" class="teacherName input" placeholder="Teacher's Name">
+                                <input type="text" class="subject input" placeholder="Subject Name">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <img src="assets/plus.svg" id="addSubNext" class="EditaddSub">
+                        
+                    <div class="doneBtn">
+                        <img src="assets/right_arrow.svg" alt="next button" class="nextBtn" id="nextBtn">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeTableSec hide" id="timeTableSec">
+                <p class="scheduleTitle">Set Time Table</p>
+                <div class="timeTableBox">
+                    <div class="mondayBox">
+                        <div class="dayBtn">
+                            <p class="day">Monday</p>
+                            <img src="assets/downArrow.svg" class="downArrow openTab">
+                        </div>
+                        <div class="dayCardsBox expand" id="dayCardsBox">
+
+                            <div class="timeCard">
+                                <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p>
+                                <div class="subSetBox">  
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p>
+                                <div class="subSetBox">
+                                    <select name="" id="" class="subList">
+                                        <option value="" selected>No Lecture</option>
+                                        <option value="">A</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">C</option>
+                                        <option value="">P</option>
+                                        <option value="">A</option>
+                                        <option value="">S</option>
+                                    </select>
+                                    <select name="" id="" class="setList">
+                                        <option value="" selected>A</option>
+                                        <option value="">B</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="mondayBox">
+                        <div class="dayBtn">
+                            <p class="day">Tuesday</p>
+                            <img src="assets/downArrow.svg" class="downArrow">
+                        </div>
+                        <div class="dayCardsBox collapse">
+                            <div class="timeCard">
+                                <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mondayBox">
+                        <div class="dayBtn">
+                            <p class="day">Wednesday</p>
+                            <img src="assets/downArrow.svg" class="downArrow">
+                        </div>
+                        <div class="dayCardsBox collapse">
+                            <div class="timeCard">
+                                <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mondayBox">
+                        <div class="dayBtn">
+                            <p class="day">Thursday</p>
+                            <img src="assets/downArrow.svg" class="downArrow">
+                        </div>
+                        <div class="dayCardsBox collapse">
+                            <div class="timeCard">
+                                <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mondayBox">
+                        <div class="dayBtn">
+                            <p class="day">Friday</p>
+                            <img src="assets/downArrow.svg" class="downArrow">
+                        </div>
+                        <div class="dayCardsBox collapse">
+                            <div class="timeCard">
+                                <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mondayBox">
+                        <div class="dayBtn">
+                            <p class="day">Saturday</p>
+                            <img src="assets/downArrow.svg" class="downArrow">
+                        </div>
+                        <div class="dayCardsBox collapse">
+                            <div class="timeCard">
+                                <p class="time">09:00 AM &nbsp; &nbsp;-&nbsp; &nbsp; 09:55 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">09:55 AM &nbsp; &nbsp;-&nbsp; &nbsp; 10:50 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">10:50 AM &nbsp; &nbsp;-&nbsp; &nbsp; 11:45 AM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">11:45 AM &nbsp; &nbsp;-&nbsp; &nbsp; 12:40 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">12:40 PM &nbsp; &nbsp;-&nbsp; &nbsp;01:35 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">01:35 PM &nbsp; &nbsp;-&nbsp; &nbsp; 02:30 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">02:30 PM &nbsp; &nbsp;-&nbsp; &nbsp; 03:25 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                            <div class="timeCard">
+                                <p class="time">03:25 PM &nbsp; &nbsp;-&nbsp; &nbsp; 04:20 PM</p>
+                                <div class="subSetBox">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="doneBtn">
+                    <div class="done" id="done">Finish</div>
+                </div>
+            </div>
+
+
+            <div class="attendanceSec hide" id="attendanceSec">
+                <div class="head">
+                    <div class="attendHeader ">
+                        <div class="logosec">
+                            <img src="assets/logo1.png" alt="AttendLY logo" class="logo2">
+                            <p class="atndLogo">AttendLY</p>
+                        </div>
+                        <div class="hamPrAll">
+                            <button class="prsntAll" id="prsntAll">Present All</button>
+                            <img src="assets/hamburger-menu.svg" alt="hamburger menu" class="hamMenu" id="hamMenu">
+                        </div>
+                    </div>
+                </div>
+                <div class="studentBox msgCenter" id="studentBox">
+                    <div class="msgToAddStd">
+                        <p class="msg">To Add Student</p>
+                        <p class="msgC">Click</p>
+                        <img src="assets/downArrowBlack.svg" alt="" class="msgArrow">
+                        <img src="assets/hamburger-menu-black.svg" alt="" class="msgHam">
+                        <img src="assets/downArrowBlack.svg" alt="" class="msgArrow">
+                        <p class="msg msgStd">Add Student</p>
+                    </div>
+                </div>
+                <div class="footer " id="footer">
+                    <select class="selectSet" id="selectSet">
+                    </select>
+                    <p class="genPDF" id="genPDF">Generate PDF</p>
+                    <select class="selectSub" id="selectSub">
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menuBox menuOp hide" id="menuBox">  
+            <div class="crInfoBox">
+                <div class="dateClose">
+                    <p class="dayDate" id="dayDate"></p>
+                    <img src="assets/close.svg" alt="close button" class="menuClose" id="menuClose">
+                </div>
+                <div class="crInfo">
+                    <div class="userImgBox" id="userImgBox">
+                        <input type="file" id="imgFile" class="imgFile" accept="image/png, image/jpeg">
+                    </div>
+                    <div class="infoHead">
+                        <p class="cr" id="cr"></p>
+                        <p class="course" id="course"></p>
+                        <p class="headSec" id="headSec"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="btnBox">
+                <button class="menuBtn" id="profile">Profile</button>
+                <button class="menuBtn" id="addStudent">Add Student</button>
+                <button class="menuBtn" id="editBtn">Edit Student</button>
+                <button class="menuBtn" id="editSubTech">Edit Subjects</button>
+                <button class="menuBtn" id="editTimeTable">Edit TimeTable</button>
+                <button class="reset" id="reset">Reset</button>
+            </div>
+        </div>
+        
+        <div class="addStdBox menuBox hide" id="addStdBox"> 
+            <div class="stdBox">
+                <p class="addStdTitile">Add Student</p>
+                <div class="stdInputBox" id="stdInputBox">
+                </div>
+    
+                <img src="assets/plus.svg" alt="" class="addStdBtn" id="addStdBtn">
+                <div class="stdBtnBox ">
+                    <button class="stdBtn" id="stdCancel">Cancel</button>
+                    <button class="stdBtn" id="stdBtnDone">Done</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="resetOverlay hide" id="resetOverlay">
+            <p class="atn">Attention !!!</p>
+            <p class="resetMsg">Resetting this app will permanently erase all data related to AttendLY, including time-table, student records, etc. This action is irreversible. <br><br><br> Do you want to reset ?</p>
+            <div class="resetBtnBox">
+                <button class="rstYes dis" id="rstYes">15s</button>
+                <button class="rstNo" id="rstNo">No</button>
+            </div>
+        </div>
+
+        <div class="pdfBox hide" id="pdfBox">
+            <div class="pdfHead">
+                <img src="assets/QULogo.png" alt="" srcset="" class="pdfImg">
+                <p class="att">ATTENDANCE</p>
+                <img src="assets/attendLYLogo.png" alt="" srcset="" class="pdfImg">
+            </div>
+            <div class="pdfInfoBox">
+                <div class="class">
+                    <div class="keyBox">
+                        <p class="key">CR Name: </p>
+                        <p class="key">Course: </p>
+                        <p class="key">Section: </p>
+                        <p class="key">Semester: </p>
+                    </div>
+                    <div class="keyBox">
+                        <p class="val" id="pdfCr"></p>
+                        <p class="val" id="pdfCor"></p>
+                        <p class="val" id="pdfSec"></p>
+                        <p class="val" id="pdfS"></p>
+                    </div>
+                </div>
+                <div class="class">
+                    <div class="keyBox">
+                        <p class="key">Teacher: </p>
+                        <p class="key">Subject: </p>
+                        <p class="key">Period: </p>
+                        <p class="key">Date: </p>
+                    </div>
+                    <div class="keyBox">
+                        <p class="val" id="techName"></p>
+                        <p class="val" id="pdfSub"></p>
+                        <p class="val" id="period"></p>
+                        <p class="val" id="pdfDate"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="titleBox">
+                <p class="title sl">Sl</p>
+                <p class="title hr atten">Attendance</p>
+                <p class="title nm">Name</p>
+                <p class="title hr pdfQid">QID</p>
+                <p class="title pdfSet">Set</p>
+            </div>
+
+            <div class="stdAttendBox" id="stdAttendBox">                
+            </div>
+            <p class="end">----------------------------- xxx -----------------------------</p>
+        </div>
+        <div class="editCtrlBox hide" id="editCtrlBox">
+            <button class="editDone edb" id="editDone">Done</button>
+        </div>
+        <div class="editOverlay hide" id="editOverlay">
+            <div class="editBox">
+                <input type="text" class="editName" id="editName" placeholder="Student Name">
+                <div class="editIdSet">
+                    <input type="number" class="editQid" id="editQid" placeholder="QID">
+                    <select class="editSet" id="editSet">
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="editCtrlBtn">
+                <button class="editCan" id="editBoxCan">Cancel</button>
+                <button class="editCan" id="edtDone">Done</button>
+            </div>
+        </div>
+
+        <div class="profileBox hide" id="profileBox">
+            <div>
+                <div class="headBox">
+                    <p class="pro" id="pro">Profile</p>
+                    <img src="assets/close.svg" class="proClose" id="proClose">
+                </div>
+                <div class="loginBox hide" id="loginBox">
+                    <div class="loginTitle">
+                        <p class="logInfo ">CR Name: </p>
+                        <input type="text" class="logInp crn" id="crn" placeholder="CR Name">
+                        <p class="logInfo ">Course: </p>
+                        <input type="text" class="logInp crs" id="crs" placeholder="Course">
+                        <p class="logInfo ">Section: </p>
+                        <input type="text" class="logInp logSec" id="logSec" placeholder="Section">
+                        <p class="logInfo ">Semester: </p>
+                        <input type="text" class="logInp logSem" id="logSem" placeholder="Semester">
+                        <div class="edSet">
+                            <p class="logInfo TSet">Total Set of class</p>
+                            <select id="edSets" class="edSets">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <button id="delPP" class="delPP">Delete Profile Image</button>
+                    </div>
+                </div>
+
+                <div class="subTeachBox hide" id="subTeachBox">
+                    <div class="subEditBox" id="subEditBox">
+                    </div>
+                    <img src="assets/plus.svg" id="EditaddSub" class="EditaddSub">
+                </div>
+
+                <button class="proDone" id="proDone">Done</button>
+            </div>
+        </div>
+        <div class="pdfGenOption" id="pdfGenOption">
+            <img src="assets/close.svg" alt="pdf generate option close" class="pdfOptClose" id="pdfOptClose">
+            <button class="allStudent" id="allStudent">All Student</button>
+            <div class="absPres">
+                <button class="onlyPresent " id="onlyPresent">Only Present</button>
+                <button class="onlyAbsent " id="onlyAbsent">Only Absent</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
